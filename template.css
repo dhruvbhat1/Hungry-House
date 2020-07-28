@@ -1,0 +1,91 @@
+* {
+	margin: 0;
+	padding: 0;
+
+
+}
+body{
+	background-color:#f0f0f0;
+}
+
+.row {
+	max-width: 1140px;
+	margin: 0 auto;
+}
+
+.restinfo{
+	width: 520px;
+	height: 1200px;
+	position: absolute;
+	background-color: white;
+	border-radius: 10px;
+	padding: 10px 10px;
+	left: 1%;
+	top: 1%;
+	margin: 5%;
+	}
+
+.restinfo h2{
+	font-size: 200%
+	padding-right: 150px;
+}
+
+
+.navigation li {
+	display: inline-block;
+	margin-left: 75px;
+
+}
+
+.navigation li a {
+	color: red;
+	text-decoration: none;
+	font-size: 120%;
+	font-weight: bold;
+}
+
+.navigation li a:hover {
+	color: orange;
+	border-bottom: 2px solid green;
+	transition: all; 3s ease-in;
+	padding: 10px;
+}
+
+.calender{
+	margin-left: 60%;
+	margin-top: 7%;
+	width: 300px;
+	height: auto;
+	background:white;
+	box-sizing: border-box;
+}
+.calender .date{
+	padding: 20px;
+	display: grid;
+	grid-template-columns: repeat(auto-fit,minmax(25px,1fr));
+	grid-gap: 10px;
+	box-sizing: border-box;
+}
+.calender .date div{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 25px;
+	color: #262626;
+}
+.calender .date div.day{
+	font-weight:700;
+}
+.calender .date div.day:first-child,
+.calender .date div.number:nth-child(7n+1)
+{
+	color: #ff685d;
+	font-weight:700;
+}
+.calender .date div.number.active
+{
+	background:#009688;
+	color: #fff;
+	font-weight: 700;
+	cursor: pointer;
+}

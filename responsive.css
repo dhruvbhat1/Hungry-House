@@ -1,0 +1,21 @@
+@media only screen and (min-width: 0px) and (max-width: 959px){
+	.nav ul li{
+		display: none;
+	}
+
+	.nav ul li.logo{
+		display: block;
+	}
+
+	.nav-icon{
+		display: block;
+	}
+
+	
+}
+
+@media only screen and (min-width: 375px) and (min-height: 812px){
+	#about-us h3{
+		margin-top: -157%;
+	}
+}

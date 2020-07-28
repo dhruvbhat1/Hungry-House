@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Responsive Checkout Form</title>
+    <link rel="stylesheet" href="ch22.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" />
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>     
+<body>
+ <form action="/action_page.php">
+
+<div class="wrapper">
+  <div class="container">
+    <div class="title">HUNGRYHOUSE</div>
+    
+    <div class="input-form">
+      
+      <div class="section-2">
+        <div class="items">
+          <label class="label">Name</label>
+          <input type="text" class="input"  placeholder="Ross Geller">
+        </div>
+      </div>
+      <div class="section-1">
+        <div class="items">
+          <label class="label">card number</label>
+          <input type="text" class="input" data-mask="0000 0000 0000 0000" placeholder="XXXX XXXX XXXX XXXX">
+        </div>
+      </div>
+      <div class="section-4">
+      	<div class="items">
+      	<label class="label">Select your country</label>
+      	</div>
+      </div>
+      </div>
+      <div class="section-3">
+        <div class="items">
+          <label class="label">Expire date</label>
+          <input type="text" class="input" data-mask="00/00" placeholder="MM/YY">
+        </div>
+        <div class="items">
+          <div class="cvc">
+            <label class="label">cvc code</label>
+            <div class="tooltip">?
+              <div class="cvc-img"><img src="p3.png" alt=""></div>
+            </div>
+          </div>
+          <input type="text" class="input" maxlength="3" placeholder="000">
+        </div>
+      </div>
+    </div>
+    
+    
+    <button class="btn" onclick="prompt('Enter the OTP')">PRocced to checkout</button>
+    
+     
+    
+  </div>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.15/jquery.mask.js"></script>
+  </form>
+</body>
+</html>
